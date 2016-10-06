@@ -1,0 +1,12 @@
+	Microsoft translator Data access:
+	//msdn account 
+        //private const string id = "SE_PlantSol_UnityTranslator";
+        //private const string pwd = "SaurF8QNNG2h?dVfXcYzV+HGKHAy9i2NW99JmSQbrmw=";
+
+        //se.dev.tool
+        //private const string id = "unitytranslator-se";
+        //private const string pwd = "L3McgaNVzU+RhmPN2pK5JlJjaaRGHyBqmPT3Z4REN0M=";
+
+        //pj.business
+        //private const string id = "se-unitytranslator";
+        //private const string pwd = "FRWWzrS22b5x0nrhnI2vljYenTbv+LhxMF4SAdKQaF4=";

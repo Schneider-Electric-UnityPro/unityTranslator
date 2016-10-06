@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnityApplicationComments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileSource="D:\projects\dev\Github\UnityTranslator\Tests\sandbox\TestData\base.zef" CRC="E09C8EAAFB9CD3E3E2C2B429ACCAB7E4D05D3C15D217A19A68206C8D5E8C1F90">
+    <Comments Key="{98552cbf-9310-48af-aa6c-820c65a17187}" Context="Project(contentHeader)\comment">
+        <Source>Station comments</Source>
+        <Translation>Commentaires de la station</Translation>
+    </Comments>
+    <Comments Key="{dbe50158-2bf1-4c4f-931c-f02fa15beb34}" Context="T_BMENOC0301_2(DDTSource)\comment">
+        <Source>Device DDT For BME NOC Factory Cast</Source>
+        <Translation>Dispositif de DDT pour NOC BME Factory Cast</Translation>
+    </Comments>
+    <Comments Key="{a7241825-2a32-4faf-9e11-8aca6850495d}" Context="T_BMENOC0301_2(DDTSource)\ETH_STATUS(variables)\comment">
+        <Source>Ethernet status</Source>
+        <Translation>Statut d’Ethernet</Translation>
+    </Comments>
+    <Comments Key="{1f3af0b9-7707-4664-b942-b3f7335085fc}" Context="T_BMENOC0301_2(DDTSource)\PORT1_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 1</Source>
+        <Translation>Lien vers le haut/bas pour port Ethernet 1</Translation>
+    </Comments>
+    <Comments Key="{a7551e6d-e801-4e94-b20f-29d95b6bf372}" Context="T_BMENOC0301_2(DDTSource)\PORT2_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 2</Source>
+        <Translation>Lien vers le haut/bas pour le port Ethernet 2</Translation>
+    </Comments>
+    <Comments Key="{1c9afdcd-a84e-49b3-9077-0cdfbf6b452b}" Context="T_BMENOC0301_2(DDTSource)\PORT3_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 3</Source>
+        <Translation>Lien vers le haut/bas pour port Ethernet 3</Translation>
+    </Comments>
+    <Comments Key="{980bfe9e-b16e-4131-99a1-9c2adc96473c}" Context="T_BMENOC0301_2(DDTSource)\ETH_BKP_PORT_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet backplane port</Source>
+        <Translation>Lien vers le haut/bas pour fond de panier accès Ethernet</Translation>
+    </Comments>
+    <Comments Key="{4913f682-2deb-4b89-b0ac-937bf1f65dd9}" Context="T_BMENOC0301_2(DDTSource)\HSBY_LINK(variables)\comment">
+        <Source>Link up/down for HSBY port</Source>
+        <Translation>Lien vers le haut/bas pour port HSBY</Translation>
+    </Comments>
+    <Comments Key="{25754624-b204-4d07-bea6-99e3cc13d3d5}" Context="T_BMENOC0301_2(DDTSource)\REDUNDANCY_STATUS(variables)\comment">
+        <Source>Redundancy status / backup path available</Source>
+        <Translation>L’état de redondance / sauvegarde chemin disponible</Translation>
+    </Comments>
+    <Comments Key="{8744685b-a295-4d66-8cdb-d7ff24de086a}" Context="T_BMENOC0301_2(DDTSource)\SCANNER_OK(variables)\comment">
+        <Source>Scanner OK and scanning at least 1 equipment (if at least 1 equipment configured)</Source>
+        <Translation>Scanner OK et au moins 1 équipement de balayage (si au moins 1 matériel configuré)</Translation>
+    </Comments>
+    <Comments Key="{1fc48673-e087-47fa-a061-0d3736856ab8}" Context="T_BMENOC0301_2(DDTSource)\GLOBAL_STATUS(variables)\comment">
+        <Source>0: one or more services not operating normally / 1: all operational</Source>
+        <Translation>0 : un ou plusieurs services ne fonctionne ne pas normalement / 1 : tous opérationnels</Translation>
+    </Comments>
+    <Comments Key="{90fa8ff9-4d80-4def-9950-1da54bb2aa45}" Context="T_BMENOC0301_2(DDTSource)\SERVICE_STATUS(variables)\comment">
+        <Source>One bit for each user-observable feature</Source>
+        <Translation>Un bit pour chaque fonctionnalité utilisateur observables</Translation>
+    </Comments>
+    <Comments Key="{9882d295-c785-4060-b0b8-dd6eb6d79eb0}" Context="T_BMENOC0301_2(DDTSource)\RSTP_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{cb626b2f-6cc1-4a2e-a18b-c94b50f6bff2}" Context="T_BMENOC0301_2(DDTSource)\PORT502_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{0902b141-e28d-4ab7-b2c3-03085e7698f7}" Context="T_BMENOC0301_2(DDTSource)\SNMP_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{3c3faf48-83e1-49a7-bcce-5046895363a9}" Context="T_BMENOC0301_2(DDTSource)\MAIN_IP_ADDRESS_STATUS(variables)\comment">
+        <Source>Main IP address status (0 in case of duplicate IP or no IP assigned)</Source>
+        <Translation>État d’adresse IP principale (0 en cas d’IP en double) ou aucune IP assignés</Translation>
+    </Comments>
+    <Comments Key="{aa595b46-80f2-47f6-9778-4c5b0fddcdf8}" Context="T_BMENOC0301_2(DDTSource)\ETH_BKP_FAILURE(variables)\comment">
+        <Source>Ethernet backplane hardware status (0: failure, 1: OK)</Source>
+        <Translation>État du matériel Ethernet fond de panier (0 : échec, 1 : OK)</Translation>
+    </Comments>
+    <Comments Key="{a1a4c934-36df-4c53-81f0-ff5a5f6fb3ac}" Context="T_BMENOC0301_2(DDTSource)\ETH_BKP_ERROR(variables)\comment">
+        <Source>Ethernet backplane error (0: error, 1: OK)</Source>
+        <Translation>Erreur de fond de panier Ethernet (0 : erreur, 1 : OK)</Translation>
+    </Comments>
+    <Comments Key="{613a5987-117d-4151-9439-d16461731984}" Context="T_BMENOC0301_2(DDTSource)\EIP_SCANNER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{bf04f40f-96b1-465d-8497-ad6b8510ced9}" Context="T_BMENOC0301_2(DDTSource)\MODBUS_SCANNER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{a16438b2-4707-4a4d-a325-5df6c058a36f}" Context="T_BMENOC0301_2(DDTSource)\NTP_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{912c35a2-9614-40f6-943d-00e37f1da16b}" Context="T_BMENOC0301_2(DDTSource)\SNTP_CLIENT(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{d6592902-b3da-45ec-acf3-4215fe724a69}" Context="T_BMENOC0301_2(DDTSource)\WEB_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{5e736883-c5cb-4238-b8ec-6a06ee9384d9}" Context="T_BMENOC0301_2(DDTSource)\FIRMWARE_UPGRADE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{81849871-32a4-4cee-84e1-9fdae90964aa}" Context="T_BMENOC0301_2(DDTSource)\FTP(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{5e4cd9dc-51c0-4781-99fa-12eb1ca5ad48}" Context="T_BMENOC0301_2(DDTSource)\FDR_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{fa9a9927-10e1-439f-bb2c-72f1d055324c}" Context="T_BMENOC0301_2(DDTSource)\EIP_ADAPTER(variables)\comment">
+        <Source>EIP adapter (server) service 0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>Service d’adaptateur (serveur) EIP 0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{e66b9b9c-588c-4390-9389-0075a8f96fa8}" Context="T_BMENOC0301_2(DDTSource)\SERVICE_STATUS2(variables)\comment">
+        <Source>One bit for each user-observable feature</Source>
+        <Translation>Un bit pour chaque fonctionnalité utilisateur observables</Translation>
+    </Comments>
+    <Comments Key="{54a712cd-5be4-4a94-8de8-d9732a0b9eb2}" Context="T_BMENOC0301_2(DDTSource)\A_B_IP_ADDRESS_STATUS(variables)\comment">
+        <Source>IP address A/B status (0 in case of duplicate IP or no IP assigned)</Source>
+        <Translation>Adresse IP A / statut B (0 en cas d’IP en double) ou aucune IP assignés</Translation>
+    </Comments>
+    <Comments Key="{b4272874-abb8-4538-9de7-0b54e1fb2cfc}" Context="T_BMENOC0301_2(DDTSource)\LLDP_SERVICE(variables)\comment">
+        <Source>LLDP service status</Source>
+        <Translation>État du service LLDP</Translation>
+    </Comments>
+    <Comments Key="{c4cd45cb-f874-4e44-b7a5-39ea0741d36e}" Context="T_BMENOC0301_2(DDTSource)\EVENT_LOG_STATUS(variables)\comment">
+        <Source>0: event log service not operating normally / 1: event log service operating normally or disabled</Source>
+        <Translation>0 : service journal des événements ne fonctionne ne pas normalement / 1 : journal des événements service fonctionne normalement ou handicapé</Translation>
+    </Comments>
+    <Comments Key="{43e44448-a946-48a2-a2fc-ded204cecded}" Context="T_BMENOC0301_2(DDTSource)\LOG_SERVER_NOT_REACHABLE(variables)\comment">
+        <Source>1: No acknowledgement received from the syslog server / 0: otherwise</Source>
+        <Translation>1 : aucun accusé de réception reçu du serveur syslog / 0 : dans le cas contraire</Translation>
+    </Comments>
+    <Comments Key="{df91ae96-5425-414d-a495-483d8617877a}" Context="T_BMENOC0301_2(DDTSource)\ETH_PORT_1_2_STATUS(variables)\comment">
+        <Source>Ethernet port 1 and 2 status</Source>
+        <Translation>État des ports 1 et 2 Ethernet</Translation>
+    </Comments>
+    <Comments Key="{af8d6198-56e7-4dbf-bb67-66fada4a07c8}" Context="T_BMENOC0301_2(DDTSource)\ETH_PORT3_BKP_STATUS(variables)\comment">
+        <Source>Ethernet port 3 and backplane port status</Source>
+        <Translation>Port Ethernet 3 et le statut de port de fond de panier</Translation>
+    </Comments>
+    <Comments Key="{e240411a-b224-4bb3-8b23-af4df97d93ea}" Context="T_BMENOC0301_2(DDTSource)\FIRMWARE_VERSION(variables)\comment">
+        <Source>MSB=Major Revision, LSB=Minor Revision</Source>
+        <Translation>MSB = révision majeure, LSB = révision mineure</Translation>
+    </Comments>
+    <Comments Key="{e681a410-9ee9-4bfc-ab13-9dd5b3c4212a}" Context="T_BMENOC0301_2(DDTSource)\FDR_USAGE(variables)\comment">
+        <Source>% of FDR server usage</Source>
+        <Translation>% d’utilisation du serveur FDR</Translation>
+    </Comments>
+    <Comments Key="{0c9036e7-9041-46f3-8180-68c51c298028}" Context="T_BMENOC0301_2(DDTSource)\RESERVED(variables)\comment">
+        <Source>Hidden - Reserved</Source>
+        <Translation>Cachée - réservé</Translation>
+    </Comments>
+    <Comments Key="{218647cb-525e-4e07-9f87-2341d46ffb29}" Context="T_BMENOC0301_2(DDTSource)\IN_PACKETS(variables)\comment">
+        <Source>Number of packets received on interface</Source>
+        <Translation>Nombre de paquets reçus sur l’interface</Translation>
+    </Comments>
+    <Comments Key="{5387663b-8b37-419b-809e-f3c810815213}" Context="T_BMENOC0301_2(DDTSource)\IN_ERRORS(variables)\comment">
+        <Source>Number of inbound packets that contain errors</Source>
+        <Translation>Nombre de paquets entrants contenant des erreurs</Translation>
+    </Comments>
+    <Comments Key="{6ab1f6ba-12b5-416d-aa46-c540c039b5a5}" Context="T_BMENOC0301_2(DDTSource)\OUT_PACKETS(variables)\comment">
+        <Source>Number of packets sent on interface</Source>
+        <Translation>Nombre de paquets envoyés sur l’interface</Translation>
+    </Comments>
+    <Comments Key="{60fd1856-0574-4eb7-b940-7e3d2ccf348b}" Context="T_BMENOC0301_2(DDTSource)\OUT_ERRORS(variables)\comment">
+        <Source>Number of outbound packets that contain errors</Source>
+        <Translation>Nombre de paquets sortants contenant des erreurs</Translation>
+    </Comments>
+    <Comments Key="{6416fc50-de1f-40a0-9150-aaff8e5e2346}" Context="T_BMENOC0301_2(DDTSource)\CONF_SIG(variables)\comment">
+        <Source>Signature of all files on local module FDR Server</Source>
+        <Translation>Signature de tous les fichiers locaux module serveur de FDR</Translation>
+    </Comments>
+    <Comments Key="{71e91e94-42bf-4bdd-be72-509c2f64c925}" Context="T_BMENOC0301_2(DDTSource)\DID_HEALTH(variables)\comment">
+        <Source>Health for DIO Objects</Source>
+        <Translation>Santé pour les objets DIO</Translation>
+    </Comments>
+    <Comments Key="{07947bfb-e3dc-48f5-bce2-c609b910f978}" Context="T_BMENOC0301_2(DDTSource)\LS_HEALTH(variables)\comment">
+        <Source>Local Slave health bits (Local Slave 1 to 16)</Source>
+        <Translation>Bits de santé locales esclave (Local esclave 1 à 16)</Translation>
+    </Comments>
+    <Comments Key="{4015587b-9c93-4a06-a814-d478ca129ff6}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\comment">
+        <Source>DIO health bits (1 bit per DIO up to 128 DIOs. 112 - 127 are reserved for future extension)</Source>
+        <Translation>Bits de santé DIO (1 bit par DIO jusqu'à 128 DIOs. 112 à 127 sont réservés pour l’extension future)</Translation>
+    </Comments>
+    <Comments Key="{bc6e2261-4929-4ebd-a352-4b8285d297de}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[112](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{5dfbf540-9ff5-4dc6-944b-17a401167e4a}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[113](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{a9e405d3-74b0-46b0-aad3-578d7d965c29}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[114](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{7c1ff23b-bc7e-4f30-897e-ad1eb0fd14c6}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[115](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{1ba354de-b181-422a-9e12-53413c6f759a}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[116](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{65086f96-4b12-44d0-9b85-34a5a3f42abb}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[117](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{f2e7ee75-1b45-48e6-94d1-34bf64a8c613}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[118](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{d256a67e-83a8-476c-a26e-f8fcfadda629}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[119](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{3aa53ae0-8afd-49ee-bb2d-264a9dcc432a}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[120](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{1e429e40-bcd0-42d9-a8e7-2340a8fdb65a}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[121](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{3ff34785-b6b9-428f-ad2b-7ff54831b2a1}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[122](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{2075d120-2748-4093-a3aa-b868c0b4f814}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[123](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{374dd7e4-3728-403b-be40-0c687ec51f87}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[124](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{0e668151-a3ab-4f4c-9329-3ec6ae9daca3}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[125](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{cae6e59f-5e23-4e9a-b911-bebd98d48df2}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[126](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{3a57341b-b31b-4c25-9179-e766845e1c94}" Context="T_BMENOC0301_2(DDTSource)\DIO_HEALTH(variables)\[127](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{c7a8d785-b558-4948-8840-1052011f6da6}" Context="T_BMENOC0301_2(DDTSource)\DEVICE_CNX_HEALTH(variables)\comment">
+        <Source>DIO device health (1 bit per DIO up to 128 DIO)</Source>
+        <Translation>Santé de dispositif DIO (1 bit par DIO jusqu'à 128 DIO)</Translation>
+    </Comments>
+    <Comments Key="{4e4c6c30-26ad-4271-91d8-0fa856921671}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\comment">
+        <Source>DIO control bits (1 bit per DIO up to 128 DIOs. 112 - 127 are reserved for future extension)</Source>
+        <Translation>Bits de contrôle DIO (1 bit par DIO jusqu'à 128 DIOs. 112 à 127 sont réservés pour l’extension future)</Translation>
+    </Comments>
+    <Comments Key="{ae9ce4b0-5176-4d8a-a338-6f2f1ecdb5e3}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[112](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{d734ad0f-393d-45c4-be69-3869b4181098}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[113](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{850835fe-21b3-411f-8639-541b32f482df}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[114](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{ec9d4206-bbf4-44ce-b230-7154d6c15ef7}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[115](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{fec8ede7-e0ff-4ee8-af0e-867ef93ce092}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[116](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{314b6b5f-e2df-4d2a-a616-2733a388756b}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[117](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{e6b52b13-e8a0-4bf6-8dee-fc7f9972568b}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[118](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{7c4b978b-c561-45fd-93ff-6377ad85e8cc}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[119](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{5e86970a-a872-4719-935a-d5ef9f667661}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[120](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{5d130498-198a-4160-b1f3-d6cb658256d7}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[121](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{a2bcc89d-27fe-4551-ad7d-55249e695b8e}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[122](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{a8ebb850-3535-4db3-bc49-77a3c6f50c4d}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[123](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{2ae1b9ed-f1b2-4387-a8b4-29d95e144a9e}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[124](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{93e86fad-3f67-47dc-a3e6-2a6420e3b7c3}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[125](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{fda21c57-d298-4c4d-a599-d3a74de0e60a}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[126](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{e13163e2-1172-416b-af95-4fd3d3b70501}" Context="T_BMENOC0301_2(DDTSource)\DIO_CTRL(variables)\[127](instanceElementDesc)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{cb9ac093-53bf-4bc4-844f-6a2eb9abc984}" Context="T_BMENOC0301_2(DDTSource)\RESERVED2(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{c8921c0d-18f0-47cf-bc7f-cfbb5f365fa9}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\comment">
+        <Source>Unused Variable</Source>
+        <Translation>Variable non utilisé</Translation>
+    </Comments>
+    <Comments Key="{00938fe1-f426-4d05-b02c-1ee32d5af42b}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[0](instanceElementDesc)\comment">
+        <Source>Start index for 1st Connection</Source>
+        <Translation>Index de début pour la 1ère connexion</Translation>
+    </Comments>
+    <Comments Key="{76116f09-0c5f-4dcc-aa4f-ad73df1b0736}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[10](instanceElementDesc)\comment">
+        <Source>Start index for 2nd Connection</Source>
+        <Translation>Index de début pour connexion 2ème</Translation>
+    </Comments>
+    <Comments Key="{b3ac6631-4de0-480c-85fb-dda921290ef8}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[30](instanceElementDesc)\comment">
+        <Source>Start index for 3rd Connection</Source>
+        <Translation>Index de début pour connexion 3e</Translation>
+    </Comments>
+    <Comments Key="{be0e2fb1-1987-4fae-a24f-5cf15db7fce9}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[40](instanceElementDesc)\comment">
+        <Source>Start index for 4th Connection</Source>
+        <Translation>Index de début pour connexion 4ème</Translation>
+    </Comments>
+    <Comments Key="{bcb527bf-0fd1-4c34-99c8-4839bfc8bd11}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[50](instanceElementDesc)\comment">
+        <Source>Start index for 5th Connection</Source>
+        <Translation>Index de début pour connexion 5e</Translation>
+    </Comments>
+    <Comments Key="{72550737-f6a8-4b6c-9d77-95d06da00bac}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[60](instanceElementDesc)\comment">
+        <Source>Start index for 6th Connection</Source>
+        <Translation>Index de début pour connexion 6e</Translation>
+    </Comments>
+    <Comments Key="{47561085-645c-40c1-97be-209009a5e964}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[70](instanceElementDesc)\comment">
+        <Source>Start index for 7th Connection</Source>
+        <Translation>Index de début pour connexion 7e</Translation>
+    </Comments>
+    <Comments Key="{7d6a909c-3a91-43d6-989a-922d5e0e7fd9}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[80](instanceElementDesc)\comment">
+        <Source>Start index for 8th Connection</Source>
+        <Translation>Index de début pour le raccordement de 8</Translation>
+    </Comments>
+    <Comments Key="{7ceec105-0880-4b30-a5a4-4305648f794c}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[90](instanceElementDesc)\comment">
+        <Source>Start index for 9th Connection</Source>
+        <Translation>Index de départ pour 9 connexion</Translation>
+    </Comments>
+    <Comments Key="{4a7764d0-c2cb-410d-9252-4f566c4c09bb}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[100](instanceElementDesc)\comment">
+        <Source>Start index for 10th Connection</Source>
+        <Translation>Index de début pour connexion 10e</Translation>
+    </Comments>
+    <Comments Key="{fa360ff7-9dc5-417c-ac0d-0b318af34f78}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[110](instanceElementDesc)\comment">
+        <Source>Start index for 11th Connection</Source>
+        <Translation>Index de début pour le raccordement de 11</Translation>
+    </Comments>
+    <Comments Key="{8591882c-3a06-4c98-9712-a59cd26706ae}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[120](instanceElementDesc)\comment">
+        <Source>Start index for 12th Connection</Source>
+        <Translation>Index de début pour connexion 12</Translation>
+    </Comments>
+    <Comments Key="{e899a28b-ef0f-4099-bba3-2e352b9395d6}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[130](instanceElementDesc)\comment">
+        <Source>Start index for 13th Connection</Source>
+        <Translation>Index de début pour connexion 13</Translation>
+    </Comments>
+    <Comments Key="{cf5419e3-a5db-47ce-ab4c-4acc739275d0}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[140](instanceElementDesc)\comment">
+        <Source>Start index for 14th Connection</Source>
+        <Translation>Index de début pour connexion 14</Translation>
+    </Comments>
+    <Comments Key="{b7bed947-e3fa-4c75-ae5c-ad97f610439b}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[150](instanceElementDesc)\comment">
+        <Source>Start index for 15th Connection</Source>
+        <Translation>Index de début de connexion 15</Translation>
+    </Comments>
+    <Comments Key="{49a977cc-d8b9-4614-b82d-02ecbc6aa05f}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[160](instanceElementDesc)\comment">
+        <Source>Start index for 16th Connection</Source>
+        <Translation>Index de début pour le raccordement de 16</Translation>
+    </Comments>
+    <Comments Key="{584ff4dd-b7cc-426d-9bd0-4208d9c4b434}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[170](instanceElementDesc)\comment">
+        <Source>Start index for 17th Connection</Source>
+        <Translation>Index de début pour connexion 17</Translation>
+    </Comments>
+    <Comments Key="{173c1bd8-eafb-4fa2-8a9f-c4451bc04e7b}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[180](instanceElementDesc)\comment">
+        <Source>Start index for 18th Connection</Source>
+        <Translation>Index de début 18ème connexion</Translation>
+    </Comments>
+    <Comments Key="{e90fa01b-eaa8-45ce-bf50-cfc51fbceef8}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[190](instanceElementDesc)\comment">
+        <Source>Start index for 19th Connection</Source>
+        <Translation>Index de début 19ème connexion</Translation>
+    </Comments>
+    <Comments Key="{30bfeb3d-9fbf-4460-91f7-c55aacb2b3a3}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[200](instanceElementDesc)\comment">
+        <Source>Start index for 20th Connection</Source>
+        <Translation>Index de début pour la 20e connexion</Translation>
+    </Comments>
+    <Comments Key="{09bb196c-a222-4696-ab30-657539a40a40}" Context="T_Modbus_Device_OUT(DDTSource)\Free(variables)\[210](instanceElementDesc)\comment">
+        <Source>Start index for 21th Connection</Source>
+        <Translation>Index de début pour connexion 21</Translation>
+    </Comments>
+    <Comments Key="{c6866c36-3a9a-4d53-84e0-6443247d1c92}" Context="testcomment(FBSource)\comment">
+        <Source>dfb comments</Source>
+        <Translation>DFB commentaires</Translation>
+    </Comments>
+    <Comments Key="{a7dd61fe-d4b9-483d-9609-a496b14ae4d9}" Context="testcomment(FBSource)\nes(FBProgram)\comment">
+        <Source>section dfb comment</Source>
+        <Translation>Commentaire de dfb section</Translation>
+    </Comments>
+    <Comments Key="{33b6c8ba-1348-4b50-bf54-1ddf222da39a}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\comment">
+        <Source>Unused Variable</Source>
+        <Translation>Variable non utilisé</Translation>
+    </Comments>
+    <Comments Key="{4e3247cb-32cf-439e-bd0c-065f946fc80d}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[0](instanceElementDesc)\comment">
+        <Source>Start index for 1st Connection</Source>
+        <Translation>Index de début pour la 1ère connexion</Translation>
+    </Comments>
+    <Comments Key="{7186a6c0-234e-42e9-a63e-527d30b46666}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[10](instanceElementDesc)\comment">
+        <Source>Start index for 2nd Connection</Source>
+        <Translation>Index de début pour connexion 2ème</Translation>
+    </Comments>
+    <Comments Key="{69dfda7f-efd7-47f6-b47b-93520e11c68a}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[30](instanceElementDesc)\comment">
+        <Source>Start index for 3rd Connection</Source>
+        <Translation>Index de début pour connexion 3e</Translation>
+    </Comments>
+    <Comments Key="{51ad3cd7-5253-43ef-a6f6-1e322e7916e6}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[40](instanceElementDesc)\comment">
+        <Source>Start index for 4th Connection</Source>
+        <Translation>Index de début pour connexion 4ème</Translation>
+    </Comments>
+    <Comments Key="{e8cf37aa-87de-465e-b78a-ebd3192d44e7}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[50](instanceElementDesc)\comment">
+        <Source>Start index for 5th Connection</Source>
+        <Translation>Index de début pour connexion 5e</Translation>
+    </Comments>
+    <Comments Key="{58e672f0-8e9f-4e70-901f-da07a9c9631b}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[60](instanceElementDesc)\comment">
+        <Source>Start index for 6th Connection</Source>
+        <Translation>Index de début pour connexion 6e</Translation>
+    </Comments>
+    <Comments Key="{6fd2ff30-107a-41a9-aaec-b1e1b726e477}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[70](instanceElementDesc)\comment">
+        <Source>Start index for 7th Connection</Source>
+        <Translation>Index de début pour connexion 7e</Translation>
+    </Comments>
+    <Comments Key="{88ec41df-8569-432a-82d4-1431d6d8f17a}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[80](instanceElementDesc)\comment">
+        <Source>Start index for 8th Connection</Source>
+        <Translation>Index de début pour le raccordement de 8</Translation>
+    </Comments>
+    <Comments Key="{82bbe6a7-ab83-427f-93e2-bd7781c10efa}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[90](instanceElementDesc)\comment">
+        <Source>Start index for 9th Connection</Source>
+        <Translation>Index de départ pour 9 connexion</Translation>
+    </Comments>
+    <Comments Key="{2e41dd09-694a-4f04-ae9c-b4898b9e8b0b}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[100](instanceElementDesc)\comment">
+        <Source>Start index for 10th Connection</Source>
+        <Translation>Index de début pour connexion 10e</Translation>
+    </Comments>
+    <Comments Key="{93cc5086-23d4-447e-a89d-b3b4979eb760}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[110](instanceElementDesc)\comment">
+        <Source>Start index for 11th Connection</Source>
+        <Translation>Index de début pour le raccordement de 11</Translation>
+    </Comments>
+    <Comments Key="{6e0d3777-4027-4387-9c3c-50085f0fedb1}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[120](instanceElementDesc)\comment">
+        <Source>Start index for 12th Connection</Source>
+        <Translation>Index de début pour connexion 12</Translation>
+    </Comments>
+    <Comments Key="{27ec230c-c791-4a7e-b909-7fe580c455eb}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[130](instanceElementDesc)\comment">
+        <Source>Start index for 13th Connection</Source>
+        <Translation>Index de début pour connexion 13</Translation>
+    </Comments>
+    <Comments Key="{aa8c5373-dc15-4a20-9374-1ba58e54ef86}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[140](instanceElementDesc)\comment">
+        <Source>Start index for 14th Connection</Source>
+        <Translation>Index de début pour connexion 14</Translation>
+    </Comments>
+    <Comments Key="{dd33357a-99d2-444f-9478-ff16ff17b51f}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[150](instanceElementDesc)\comment">
+        <Source>Start index for 15th Connection</Source>
+        <Translation>Index de début de connexion 15</Translation>
+    </Comments>
+    <Comments Key="{96864255-9250-4e33-b673-fc2054f9c7d0}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[160](instanceElementDesc)\comment">
+        <Source>Start index for 16th Connection</Source>
+        <Translation>Index de début pour le raccordement de 16</Translation>
+    </Comments>
+    <Comments Key="{b3692a1f-acb9-4b9c-b3e0-a2e7586632db}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[170](instanceElementDesc)\comment">
+        <Source>Start index for 17th Connection</Source>
+        <Translation>Index de début pour connexion 17</Translation>
+    </Comments>
+    <Comments Key="{46363568-7d23-48b7-9854-765bff6477ca}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[180](instanceElementDesc)\comment">
+        <Source>Start index for 18th Connection</Source>
+        <Translation>Index de début 18ème connexion</Translation>
+    </Comments>
+    <Comments Key="{ea23e17f-ae01-4a75-8136-584aaca61fab}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[190](instanceElementDesc)\comment">
+        <Source>Start index for 19th Connection</Source>
+        <Translation>Index de début 19ème connexion</Translation>
+    </Comments>
+    <Comments Key="{6965813b-0f36-470a-ad8f-3479a7a9f40b}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[200](instanceElementDesc)\comment">
+        <Source>Start index for 20th Connection</Source>
+        <Translation>Index de début pour la 20e connexion</Translation>
+    </Comments>
+    <Comments Key="{c78f5304-a58c-42df-8d5a-48cfe760049d}" Context="T_Modbus_Device_IN(DDTSource)\Free(variables)\[210](instanceElementDesc)\comment">
+        <Source>Start index for 21th Connection</Source>
+        <Translation>Index de début pour connexion 21</Translation>
+    </Comments>
+    <Comments Key="{1356e1dd-03ff-41da-a067-c028376f2338}" Context="T_Modbus_Device(DDTSource)\comment">
+        <Source>Device DDT For BME NOC Non Factory Cast</Source>
+        <Translation>Dispositif de DDT pour Cast Non usine BME NOC</Translation>
+    </Comments>
+    <Comments Key="{25fe68ee-aaf4-484c-b03b-6b6f2fd7d789}" Context="T_Modbus_Device(DDTSource)\Freshness(variables)\comment">
+        <Source>Global Freshness</Source>
+        <Translation>Fraîcheur de Global</Translation>
+    </Comments>
+    <Comments Key="{67d73226-3a1a-423f-b171-ad2456d2b461}" Context="T_Modbus_Device(DDTSource)\Freshness_1(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{80099679-bb3c-4bdf-aef0-b2258ee411e7}" Context="T_Modbus_Device(DDTSource)\Freshness_2(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{4ec7c2af-ea9a-4328-9398-fe0d24e65c43}" Context="T_Modbus_Device(DDTSource)\Freshness_3(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{12c36a76-1800-455e-a7e4-6f8be10c2ba5}" Context="T_Modbus_Device(DDTSource)\Freshness_4(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{8a0febd6-5417-4463-aeaf-2bcdc48d2a76}" Context="T_Modbus_Device(DDTSource)\Freshness_5(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{95aa415c-0523-43da-80ac-e18a7f49637d}" Context="T_Modbus_Device(DDTSource)\Freshness_6(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{b5d57167-3c1c-4ea9-867d-6ca0b0cd09de}" Context="T_Modbus_Device(DDTSource)\Freshness_7(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{48a3ccb5-090d-40b8-8356-0a0ebd6e4f0f}" Context="T_Modbus_Device(DDTSource)\Freshness_8(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{095d1f85-c683-4e69-94a6-19f7be77eac2}" Context="T_Modbus_Device(DDTSource)\Freshness_9(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{8696d8bf-53fa-41f7-9201-d3b4699a4f30}" Context="T_Modbus_Device(DDTSource)\Freshness_10(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{124cdfaa-77bb-4698-8504-29fe64232065}" Context="T_Modbus_Device(DDTSource)\Freshness_11(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{c4d0fe09-20c8-4a1c-ba46-3561233ae66c}" Context="T_Modbus_Device(DDTSource)\Freshness_12(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{fbdeb85f-82f5-4a98-a5a2-7e365be39b91}" Context="T_Modbus_Device(DDTSource)\Freshness_13(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{6c35e137-7499-4e18-a8c2-2ef89519ae4c}" Context="T_Modbus_Device(DDTSource)\Freshness_14(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{ee9cfb16-d457-4e2f-8d02-094bd76bd96b}" Context="T_Modbus_Device(DDTSource)\Freshness_15(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{e1add213-ca1a-4226-8298-c8ce84b2646e}" Context="T_Modbus_Device(DDTSource)\Freshness_16(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{6eec79b5-4ff2-48a3-9f34-4124e41bfbd2}" Context="T_Modbus_Device(DDTSource)\Freshness_17(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{20652825-3015-427a-8cda-0936656136e2}" Context="T_Modbus_Device(DDTSource)\Freshness_18(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{99613d75-7c34-4217-8dd4-f0e31a865513}" Context="T_Modbus_Device(DDTSource)\Freshness_19(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{bcfecfc6-ce92-4611-bad8-4d578bc58b5c}" Context="T_Modbus_Device(DDTSource)\Freshness_20(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{a1e3d2e3-bc8c-42d1-b504-1b492e471f0a}" Context="T_Modbus_Device(DDTSource)\Freshness_21(variables)\comment">
+        <Source>Freshness of Object</Source>
+        <Translation>Fraîcheur d’objet</Translation>
+    </Comments>
+    <Comments Key="{d4619903-6e1e-42dc-b430-9c6f4a239916}" Context="T_Modbus_Device(DDTSource)\Inputs(variables)\comment">
+        <Source>Input Variables</Source>
+        <Translation>Variables d’entrée</Translation>
+    </Comments>
+    <Comments Key="{92c94d96-b2fc-426d-954f-8ccd387e29ed}" Context="T_Modbus_Device(DDTSource)\Outputs(variables)\comment">
+        <Source>Output Variables</Source>
+        <Translation>Variables de sortie</Translation>
+    </Comments>
+    <Comments Key="{12e90558-21d3-40bf-bb1b-da9ebfbba6e2}" Context="T_NOCDIO_HEALTH(DDTSource)\comment">
+        <Source>Health of Distributed IO Objects</Source>
+        <Translation>Santé des objets d’e/s distribuées</Translation>
+    </Comments>
+    <Comments Key="{8c117d09-bb7e-4bf8-a193-9669a82c913b}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_2_17(variables)\comment">
+        <Source>Device Connection health bits 2 to 17</Source>
+        <Translation>Santé de connexion de périphérique bits 2 à 17</Translation>
+    </Comments>
+    <Comments Key="{0d69b5d0-e90d-4302-912c-9e49b901a388}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_18_33(variables)\comment">
+        <Source>Device Connection health bits 18 to 33</Source>
+        <Translation>Santé de connexion de périphérique mèches 18 à 33</Translation>
+    </Comments>
+    <Comments Key="{2cc5ed1f-3c8f-4d2d-9240-b1cbe4b04ded}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_34_49(variables)\comment">
+        <Source>Device Connection health bits 34 to 49</Source>
+        <Translation>Santé de connexion de périphérique mèches 34 à 49</Translation>
+    </Comments>
+    <Comments Key="{145c97b0-c91c-426f-ace8-95d141c178ae}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_50_65(variables)\comment">
+        <Source>Device Connection health bits 50 to 65</Source>
+        <Translation>Santé de connexion de périphérique mèches 50 à 65</Translation>
+    </Comments>
+    <Comments Key="{931335ca-0b57-4aa1-a2ea-9889fa231933}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_66_81(variables)\comment">
+        <Source>Device Connection health bits 66 to 81</Source>
+        <Translation>Santé de connexion de périphérique bits 66 à 81</Translation>
+    </Comments>
+    <Comments Key="{97a1f49b-a726-48df-a1d2-59375756fd4b}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_82_97(variables)\comment">
+        <Source>Device Connection health bits 82 to 97</Source>
+        <Translation>Santé de connexion de périphérique mèches 82 à 97</Translation>
+    </Comments>
+    <Comments Key="{73eb534c-ca58-43ea-b9fa-e49dcb0dec85}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_98_113(variables)\comment">
+        <Source>Device Connection health bits 98 to 113</Source>
+        <Translation>Santé de connexion de périphérique mèches 98 à 113</Translation>
+    </Comments>
+    <Comments Key="{c565e4d6-12e7-472f-a237-533b8ac5ef04}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_114_129(variables)\comment">
+        <Source>Device Connection health bits 114 to 129</Source>
+        <Translation>Bits de santé dispositif connexion 114 à 129</Translation>
+    </Comments>
+    <Comments Key="{f3eca813-0e57-4675-b2bf-6064864a8abc}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_130_145(variables)\comment">
+        <Source>Device Connection health bits 130 to 145</Source>
+        <Translation>Santé de connexion de périphérique bits 130 à 145</Translation>
+    </Comments>
+    <Comments Key="{fbbc4387-fcab-4f14-8c9d-d982e547523c}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_146_161(variables)\comment">
+        <Source>Device Connection health bits 146 to 161</Source>
+        <Translation>Santé de connexion de périphérique mèches 146 à 161</Translation>
+    </Comments>
+    <Comments Key="{4750f5f4-0bcf-4392-91eb-86dcba7725a0}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_162_177(variables)\comment">
+        <Source>Device Connection health bits 162 to 511</Source>
+        <Translation>Santé de connexion de périphérique mèches 162 à 511</Translation>
+    </Comments>
+    <Comments Key="{9b04138e-6191-42e0-b4c2-2622338ab62c}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_178_193(variables)\comment">
+        <Source>Device Connection health bits 178 to 193</Source>
+        <Translation>Santé de connexion de périphérique mèches 178 à 193</Translation>
+    </Comments>
+    <Comments Key="{aa28bde5-228c-4023-b46a-be80a6c2cae0}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_194_209(variables)\comment">
+        <Source>Device Connection health bits 194 to 209</Source>
+        <Translation>Santé de connexion de périphérique mèches 194 à 209</Translation>
+    </Comments>
+    <Comments Key="{8f7bcf09-8c5a-4da2-b632-6bcba000e578}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_210_225(variables)\comment">
+        <Source>Device Connection health bits 210 to 225</Source>
+        <Translation>Santé de connexion de périphérique mèches 210 à 225</Translation>
+    </Comments>
+    <Comments Key="{e081455e-2572-4059-8af3-b5234f61db2e}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_226_241(variables)\comment">
+        <Source>Device Connection health bits 226 to 241</Source>
+        <Translation>Santé de connexion de périphérique mèches 226 à 241</Translation>
+    </Comments>
+    <Comments Key="{950c6daf-41b8-4f84-ae45-36cd123efb67}" Context="T_NOCDIO_HEALTH(DDTSource)\DEVICE_CNX_HEALTH_242_257(variables)\comment">
+        <Source>Device Connection health bits 242 to 257</Source>
+        <Translation>Santé de connexion de périphérique mèches 242 à 257</Translation>
+    </Comments>
+    <Comments Key="{090974df-b21b-463e-b777-8c2bf466c30b}" Context="T_BMEP58_ECPU_EXT(DDTSource)\comment">
+        <Source>Enhanced Device DDT for embedded M580 DTM (with standalone PLC)</Source>
+        <Translation>Améliorés dispositif DDT pour embedded M580 DTM (avec autonome PLC)</Translation>
+    </Comments>
+    <Comments Key="{7ec62e10-1399-4804-8b23-f2c58d47f182}" Context="T_BMEP58_ECPU_EXT(DDTSource)\CRA_CNX_HEALTH(variables)\comment">
+        <Source>CRA health (Drop 1 to 31)</Source>
+        <Translation>Santé de l’arc (Drop 1 à 31)</Translation>
+    </Comments>
+    <Comments Key="{5d1575b8-44a9-4734-b08e-96e4562aea6e}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RES_CRA_CNX_HEALTH32(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{b4e6ad5c-0f3d-406a-a147-41ed972f75ab}" Context="T_BMEP58_ECPU_EXT(DDTSource)\CRA_SAFE_HEALTH(variables)\comment">
+        <Source>Health bits for CRA Safe Task objects</Source>
+        <Translation>Bits de santé pour les objets Task sécuritaire de l’arc</Translation>
+    </Comments>
+    <Comments Key="{9290ee89-8ed3-4ddb-a1bc-76bdfcf987fd}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DID_HEALTH(variables)\comment">
+        <Source>Health for DIO (New field name)</Source>
+        <Translation>Santé pour DIO (nouveau nom de domaine)</Translation>
+    </Comments>
+    <Comments Key="{d78428e7-dc4e-4cd5-be9c-5c3b49d353c5}" Context="T_BMEP58_ECPU_EXT(DDTSource)\CIxR_OBJ_HEALTH(variables)\comment">
+        <Source>CIMR/CIDR Object health bits</Source>
+        <Translation>Bits de santé objet CIMR/CIDR</Translation>
+    </Comments>
+    <Comments Key="{e572e94e-b026-42da-a37a-7fb3a997a58f}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_STATUS(variables)\comment">
+        <Source>Ethernet status</Source>
+        <Translation>Statut d’Ethernet</Translation>
+    </Comments>
+    <Comments Key="{bd570d69-1e20-4f6d-9744-e2eb52d6a93c}" Context="T_BMEP58_ECPU_EXT(DDTSource)\PORT1_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 1</Source>
+        <Translation>Lien vers le haut/bas pour port Ethernet 1</Translation>
+    </Comments>
+    <Comments Key="{218a3f9d-6624-4c5d-939c-7d19389a66ca}" Context="T_BMEP58_ECPU_EXT(DDTSource)\PORT2_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 2</Source>
+        <Translation>Lien vers le haut/bas pour le port Ethernet 2</Translation>
+    </Comments>
+    <Comments Key="{8900c439-e18f-4106-bcb8-3d7c98b3c2d5}" Context="T_BMEP58_ECPU_EXT(DDTSource)\PORT3_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet port 3</Source>
+        <Translation>Lien vers le haut/bas pour port Ethernet 3</Translation>
+    </Comments>
+    <Comments Key="{c8a123bd-5df8-4410-bed3-4a5fd78424b9}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_BKP_PORT_LINK(variables)\comment">
+        <Source>Link up/down for Ethernet backplane port</Source>
+        <Translation>Lien vers le haut/bas pour fond de panier accès Ethernet</Translation>
+    </Comments>
+    <Comments Key="{eae4c671-afe9-4e22-adff-290a16180fad}" Context="T_BMEP58_ECPU_EXT(DDTSource)\HSBY_LINK(variables)\comment">
+        <Source>Link up/down for HSBY port</Source>
+        <Translation>Lien vers le haut/bas pour port HSBY</Translation>
+    </Comments>
+    <Comments Key="{f18cc11f-5a46-4664-b35e-94284e640e28}" Context="T_BMEP58_ECPU_EXT(DDTSource)\REDUNDANCY_STATUS(variables)\comment">
+        <Source>Redundancy status / backup path available</Source>
+        <Translation>L’état de redondance / sauvegarde chemin disponible</Translation>
+    </Comments>
+    <Comments Key="{5a212ab7-61a3-4ffb-8dba-f2d8c40c02c9}" Context="T_BMEP58_ECPU_EXT(DDTSource)\SCANNER_OK(variables)\comment">
+        <Source>Scanner OK and scanning at least 1 equipment (if at least 1 equipment configured)</Source>
+        <Translation>Scanner OK et au moins 1 équipement de balayage (si au moins 1 matériel configuré)</Translation>
+    </Comments>
+    <Comments Key="{512dddf7-c694-4797-8fd9-580f172441b2}" Context="T_BMEP58_ECPU_EXT(DDTSource)\GLOBAL_STATUS(variables)\comment">
+        <Source>0: one or more services not operating normally / 1: all operational</Source>
+        <Translation>0 : un ou plusieurs services ne fonctionne ne pas normalement / 1 : tous opérationnels</Translation>
+    </Comments>
+    <Comments Key="{811be4e2-e0f4-4032-9cff-1abfb558f799}" Context="T_BMEP58_ECPU_EXT(DDTSource)\SERVICE_STATUS(variables)\comment">
+        <Source>One bit for each user-observable feature</Source>
+        <Translation>Un bit pour chaque fonctionnalité utilisateur observables</Translation>
+    </Comments>
+    <Comments Key="{a0e18f4c-9271-4933-9388-d0102f09946f}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RSTP_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{77a9e23c-08fe-4888-a181-395ae2c1cbf3}" Context="T_BMEP58_ECPU_EXT(DDTSource)\PORT502_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{cb919177-c6bf-4370-964a-0f5f36b9bdb8}" Context="T_BMEP58_ECPU_EXT(DDTSource)\SNMP_SERVICE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{5e325646-e370-4852-9d47-a8e54dbb8af9}" Context="T_BMEP58_ECPU_EXT(DDTSource)\MAIN_IP_ADDRESS_STATUS(variables)\comment">
+        <Source>Main IP address status (0 in case of duplicate IP or no IP assigned)</Source>
+        <Translation>État d’adresse IP principale (0 en cas d’IP en double) ou aucune IP assignés</Translation>
+    </Comments>
+    <Comments Key="{a383c2e2-02af-49b2-9483-eedd99a6682f}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_BKP_FAILURE(variables)\comment">
+        <Source>Ethernet backplane hardware status (0: failure, 1: OK)</Source>
+        <Translation>État du matériel Ethernet fond de panier (0 : échec, 1 : OK)</Translation>
+    </Comments>
+    <Comments Key="{8e83a5cf-4f61-4316-822c-a8238a57e41b}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_BKP_ERROR(variables)\comment">
+        <Source>Ethernet backplane error (0: error, 1: OK)</Source>
+        <Translation>Erreur de fond de panier Ethernet (0 : erreur, 1 : OK)</Translation>
+    </Comments>
+    <Comments Key="{16bb4e71-caec-40b8-95df-9e1d69edbe61}" Context="T_BMEP58_ECPU_EXT(DDTSource)\EIP_SCANNER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{5161bcce-9d29-4e50-ab4d-c07acbc17f6f}" Context="T_BMEP58_ECPU_EXT(DDTSource)\MODBUS_SCANNER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{76ed3840-afc1-4121-bbd6-ea4277262a13}" Context="T_BMEP58_ECPU_EXT(DDTSource)\NTP_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{71c8cbfd-4047-4646-88de-59690eee84cc}" Context="T_BMEP58_ECPU_EXT(DDTSource)\SNTP_CLIENT(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{41656b43-324e-4d2d-bbf0-82174e81fef0}" Context="T_BMEP58_ECPU_EXT(DDTSource)\WEB_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{42659385-98b1-4781-b6ad-74cf318d6879}" Context="T_BMEP58_ECPU_EXT(DDTSource)\FIRMWARE_UPGRADE(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{9478dafb-d584-478a-a4f7-b8c80988b12b}" Context="T_BMEP58_ECPU_EXT(DDTSource)\FTP(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{a05546b0-0f81-4719-a4c7-18dcaa3a3446}" Context="T_BMEP58_ECPU_EXT(DDTSource)\FDR_SERVER(variables)\comment">
+        <Source>0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{86a6a3af-7e0f-4210-acc7-7f03455b992d}" Context="T_BMEP58_ECPU_EXT(DDTSource)\EIP_ADAPTER(variables)\comment">
+        <Source>EIP adapter (server) service 0: service not operating normally / 1: service operating normally or disabled</Source>
+        <Translation>Service d’adaptateur (serveur) EIP 0 : ne fonctionne ne pas normalement de service / 1 : service fonctionne normalement ou handicapés</Translation>
+    </Comments>
+    <Comments Key="{6a35fc17-68a2-4c3b-bdb9-7c0c6dd6e988}" Context="T_BMEP58_ECPU_EXT(DDTSource)\SERVICE_STATUS2(variables)\comment">
+        <Source>One bit for each user-observable feature</Source>
+        <Translation>Un bit pour chaque fonctionnalité utilisateur observables</Translation>
+    </Comments>
+    <Comments Key="{883b0719-a25e-4e2e-9b49-a7956665e6ae}" Context="T_BMEP58_ECPU_EXT(DDTSource)\A_B_IP_ADDRESS_STATUS(variables)\comment">
+        <Source>IP address A/B status (0 in case of duplicate IP or no IP assigned)</Source>
+        <Translation>Adresse IP A / statut B (0 en cas d’IP en double) ou aucune IP assignés</Translation>
+    </Comments>
+    <Comments Key="{1b82263a-4814-42dc-8bcb-8874428a1346}" Context="T_BMEP58_ECPU_EXT(DDTSource)\LLDP_SERVICE(variables)\comment">
+        <Source>LLDP service status</Source>
+        <Translation>État du service LLDP</Translation>
+    </Comments>
+    <Comments Key="{ef7bde11-9cb4-4aa9-894b-7f077a73e473}" Context="T_BMEP58_ECPU_EXT(DDTSource)\EVENT_LOG_STATUS(variables)\comment">
+        <Source>0: event log service not operating normally / 1: event log service operating normally or disabled</Source>
+        <Translation>0 : service journal des événements ne fonctionne ne pas normalement / 1 : journal des événements service fonctionne normalement ou handicapé</Translation>
+    </Comments>
+    <Comments Key="{5f882328-8b5f-4644-a605-41a22b2619c2}" Context="T_BMEP58_ECPU_EXT(DDTSource)\LOG_SERVER_NOT_REACHABLE(variables)\comment">
+        <Source>1: No acknowledgement received from the syslog server / 0: otherwise</Source>
+        <Translation>1 : aucun accusé de réception reçu du serveur syslog / 0 : dans le cas contraire</Translation>
+    </Comments>
+    <Comments Key="{cfc7906e-dec2-42d9-a412-c6d53263ed74}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_PORT_1_2_STATUS(variables)\comment">
+        <Source>Ethernet port 1 and 2 status</Source>
+        <Translation>État des ports 1 et 2 Ethernet</Translation>
+    </Comments>
+    <Comments Key="{e0fbf064-41de-4d49-bb68-14ff3d7f052b}" Context="T_BMEP58_ECPU_EXT(DDTSource)\ETH_PORT3_BKP_STATUS(variables)\comment">
+        <Source>Ethernet port 3 and backplane port status</Source>
+        <Translation>Port Ethernet 3 et le statut de port de fond de panier</Translation>
+    </Comments>
+    <Comments Key="{aa3ed8c4-e67a-4e2e-9a13-9b1c3d50b43e}" Context="T_BMEP58_ECPU_EXT(DDTSource)\FDR_USAGE(variables)\comment">
+        <Source>% of FDR server usage</Source>
+        <Translation>% d’utilisation du serveur FDR</Translation>
+    </Comments>
+    <Comments Key="{e61e1042-9d60-4245-b176-d3b03fcf78b8}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RESERVED1(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{6f0fc710-d833-4e67-8d82-a76beb2703a9}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RESERVED2(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{d16855fe-264f-4494-af88-aa8a156c3bf0}" Context="T_BMEP58_ECPU_EXT(DDTSource)\IN_PACKETS(variables)\comment">
+        <Source>Number of packets received on interface</Source>
+        <Translation>Nombre de paquets reçus sur l’interface</Translation>
+    </Comments>
+    <Comments Key="{74285831-0ef5-4a6b-b1a0-99e7a6962a85}" Context="T_BMEP58_ECPU_EXT(DDTSource)\IN_ERRORS(variables)\comment">
+        <Source>Number of inbound packets that contain errors</Source>
+        <Translation>Nombre de paquets entrants contenant des erreurs</Translation>
+    </Comments>
+    <Comments Key="{94f2c554-22a6-4e66-ad9a-5a133d27f0f3}" Context="T_BMEP58_ECPU_EXT(DDTSource)\OUT_PACKETS(variables)\comment">
+        <Source>Number of packets sent on interface</Source>
+        <Translation>Nombre de paquets envoyés sur l’interface</Translation>
+    </Comments>
+    <Comments Key="{0bcb1b34-a698-410c-ad33-7b6541bd8ce4}" Context="T_BMEP58_ECPU_EXT(DDTSource)\OUT_ERRORS(variables)\comment">
+        <Source>Number of outbound packets that contain errors</Source>
+        <Translation>Nombre de paquets sortants contenant des erreurs</Translation>
+    </Comments>
+    <Comments Key="{3e076d51-71fe-4b4e-8942-7addf2d29add}" Context="T_BMEP58_ECPU_EXT(DDTSource)\CONF_SIG(variables)\comment">
+        <Source>Signature of all files on local module FDR Server</Source>
+        <Translation>Signature de tous les fichiers locaux module serveur de FDR</Translation>
+    </Comments>
+    <Comments Key="{9bb287df-d1d7-4032-807d-bc2398a133c8}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DROP_HEALTH(variables)\comment">
+        <Source>DROP health bits (Drop 1 to 31)</Source>
+        <Translation>Bits de santé DROP (Drop 1 à 31)</Translation>
+    </Comments>
+    <Comments Key="{a62ce8ac-aa96-4126-a375-1f2787cfe32f}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RES_DROP_HEALTH32(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{fc37fc6e-128f-406d-a619-357a1dd9a295}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RIO_HEALTH(variables)\comment">
+        <Source>RIO health bits (1 bit per RIO up to 128)</Source>
+        <Translation>Bits de santé RIO (1 bit par RIO jusqu'à 128)</Translation>
+    </Comments>
+    <Comments Key="{f0b7d0fe-24aa-4bf3-b80b-1c3060e6385d}" Context="T_BMEP58_ECPU_EXT(DDTSource)\LS_HEALTH(variables)\comment">
+        <Source>Local Slave health bits (Local Slave 1 to 3)</Source>
+        <Translation>Bits de santé locales esclave (Local esclave 1 à 3)</Translation>
+    </Comments>
+    <Comments Key="{5e3714ae-7a00-4d31-8093-913825bfb0af}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DIO_HEALTH(variables)\comment">
+        <Source>DIO health bits (1 bit per DIO up to 128 DIOs)</Source>
+        <Translation>Bits de santé DIO (1 bit par DIO jusqu'à 128 DIOs)</Translation>
+    </Comments>
+    <Comments Key="{c6666db5-e06a-4ef3-802e-666b1fe8f7ca}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DEVICE_CNX_HEALTH(variables)\comment">
+        <Source>DIO device health (1 bit per DIO up to 128 DIO)</Source>
+        <Translation>Santé de dispositif DIO (1 bit par DIO jusqu'à 128 DIO)</Translation>
+    </Comments>
+    <Comments Key="{608ec200-3249-432d-856e-e9d8960a7406}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DROP_CTRL(variables)\comment">
+        <Source>DROP control bits (Drop 1 to 31)</Source>
+        <Translation>Bits de contrôle DROP (Drop 1 à 31)</Translation>
+    </Comments>
+    <Comments Key="{8972b4b9-ff48-49e2-8cd0-f33a4481ae41}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RES_DROP_CTRL32(variables)\comment">
+        <Source>Reserved</Source>
+        <Translation>Réservés</Translation>
+    </Comments>
+    <Comments Key="{51f75b0f-0104-4e34-bbac-78d5b5fce6dc}" Context="T_BMEP58_ECPU_EXT(DDTSource)\RIO_CTRL(variables)\comment">
+        <Source>RIO control bits (1 bit per RIO up to 128)</Source>
+        <Translation>Bits de contrôle de RIO (1 bit par RIO jusqu'à 128)</Translation>
+    </Comments>
+    <Comments Key="{a67d4091-60b2-4f0b-a157-dec347ffe93d}" Context="T_BMEP58_ECPU_EXT(DDTSource)\DIO_CTRL(variables)\comment">
+        <Source>DIO control bits (1 bit per DIO up to 128 DIOs)</Source>
+        <Translation>Bits de contrôle DIO (1 bit par DIO jusqu'à 128 DIOs)</Translation>
+    </Comments>
+    <Comments Key="{4148d931-8539-48e1-91fe-e248336c46ef}" Context="Ethernet_1(ethernet)\comment">
+        <Source>test network comments</Source>
+        <Translation>test réseau commentaires</Translation>
+    </Comments>
+    <Comments Key="{54091830-2e05-4ee7-a858-a7b1e14caac0}" Context="MAST(taskDesc)\comment">
+        <Source>Mast task comment</Source>
+        <Translation>Commentaire de tâche mât</Translation>
+    </Comments>
+    <Comments Key="{9148ec50-5161-4c4c-ad34-7b0b8035446d}" Context="Functional Project(FMDesc)\comment">
+        <Source>functional station property comment</Source>
+        <Translation>Commentaire de propriété station fonctionnelle</Translation>
+    </Comments>
+    <Comments Key="{af19e4e4-facb-446d-8032-caeb5d797d43}" Context="Functional Project(FMDesc)\fm1(FMDesc)\comment">
+        <Source>Functional module  property comment</Source>
+        <Translation>Commentaire de propriété module fonctionnel</Translation>
+    </Comments>
+    <Comments Key="{ec9f9f47-a1fd-4bf1-a12c-30780edb1c88}" Context="S1(identProgram)\comment">
+        <Source>ST section property comment</Source>
+        <Translation>Commentaire de propriété section ST</Translation>
+    </Comments>
+    <Comments Key="{910fc358-c329-4530-8cb1-8e256d3f6475}" Context="s2(identProgram)\comment">
+        <Source>IL section property comment</Source>
+        <Translation>IL section propriété commentaire</Translation>
+    </Comments>
+    <Comments Key="{456c5a62-dc5a-4611-b5a8-498b43a2bb8b}" Context="FBD(identProgram)\comment">
+        <Source>FBD  section property comment</Source>
+        <Translation>Commentaire de propriété section FBD</Translation>
+    </Comments>
+    <Comments Key="{e1ecaf3d-6d5c-48df-bd67-59fab3a7056f}" Context="sfc1(identProgram)\comment">
+        <Source>Sfc  section property comment</Source>
+        <Translation>Commentaire de propriété section SFC</Translation>
+    </Comments>
+    <Comments Key="{596b5330-6293-41d4-b1d4-64ad9bf92197}" Context="Chart(chartSource)\comment">
+        <Source>transition comment property</Source>
+        <Translation>propriété de commentaire de transition</Translation>
+    </Comments>
+    <Comments Key="{f7e79256-5889-4379-b88f-f721b2028588}" Context="Chart(chartSource)\comment">
+        <Source>macrostep property
+</Source>
+        <Translation>propriété de la macro-étape
+</Translation>
+    </Comments>
+    <Comments Key="{e678b631-8c97-4894-821e-9d4197e94041}" Context="MS_1_2(macroSource)\comment">
+        <Source>macrostep property
+</Source>
+        <Translation>propriété de la macro-étape
+</Translation>
+    </Comments>
+    <Comments Key="{6964e720-573f-4b86-84ca-ec2c644cdb4f}" Context="a(actionSource)\comment">
+        <Source>comment property action section</Source>
+        <Translation>section de commentaire propriété action</Translation>
+    </Comments>
+    <Comments Key="{b53bfc6c-a593-4535-b454-5dee862e8c35}" Context="s3(identProgram)\comment">
+        <Source>LD section property comment</Source>
+        <Translation>Commentaire de LD section propriété</Translation>
+    </Comments>
+    <Comments Key="{4265b2ae-44ab-4f50-8ec8-161f2b5f048a}" Context="sr1(identProgram)\comment">
+        <Source>SR LD section property comment</Source>
+        <Translation>Commentaire de LD SR section propriété</Translation>
+    </Comments>
+    <Comments Key="{bede2558-c65e-4be9-b5ee-afc3e28c2355}" Context="Timer0(identProgram)\comment">
+        <Source>timer event property comment</Source>
+        <Translation>Commentaire de propriété événement Timer</Translation>
+    </Comments>
+    <Comments Key="{3698ae6f-a025-4a05-a54c-40caf230a15e}" Context="Evt0(identProgram)\comment">
+        <Source>IO event propety comment</Source>
+        <Translation>Commentaire de IO événement propety</Translation>
+    </Comments>
+    <Comments Key="{0f8cf5df-3e3c-463d-b830-9315f8375732}" Context="Table(animationTable)\comment">
+        <Source>anim table property comment</Source>
+        <Translation>Commentaire de propriété table anim</Translation>
+    </Comments>
+    <Comments Key="{a2edf77a-24ea-4f7e-b70f-461f1bceb9ab}" Context="textBox">
+        <Source>FBD  section code comment</Source>
+        <Translation>Commentaire de code section FBD</Translation>
+    </Comments>
+    <Comments Key="{f3eac123-66c5-429c-bf6d-2e609548942a}" Context="Chart(chartSource)\textBox">
+        <Source>Chart code simple comment</Source>
+        <Translation>Commentaire de simple code graphique</Translation>
+    </Comments>
+    <Comments Key="{c1e28013-6747-462e-a4b2-50345d4d73cf}" Context="textBox">
+        <Source>LD code comment</Source>
+        <Translation>Commentaire de LD le code</Translation>
+    </Comments>
+    <Comments Key="{1e0b5c7b-b746-4285-8498-3d30db869e04}" Context="textBox">
+        <Source>LD code comment 2</Source>
+        <Translation>Commentaire de LD le code 2</Translation>
+    </Comments>
+    <Comments Key="{9ba90b19-5b23-4820-9b3d-f021b8e16448}" Context="STSource code comment [1]">
+        <Source> test section code comment in ST </Source>
+        <Translation> tester la section commentaire du code dans ST </Translation>
+    </Comments>
+    <Comments Key="{8c616c7a-eef3-45c1-b716-2acf7e82dee6}" Context="ILSource code comment [1]">
+        <Source> test IL code section comment</Source>
+        <Translation> test de commentaire de l’article pour le code IL</Translation>
+    </Comments>
+</UnityApplicationComments>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SchneiderElectric.UnityComments.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MicrosoftTranslatorAccountkey1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">se-unitytranslator</Value>
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountPwd1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FRWWzrS22b5x0nrhnI2vljYenTbv+LhxMF4SAdKQaF4=</Value>
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountkey2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">unitytranslator-se</Value>
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountPwd2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">L3McgaNVzU+RhmPN2pK5JlJjaaRGHyBqmPT3Z4REN0M=</Value>
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountkey3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountPwd3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountkey4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MicrosoftTranslatorAccountPwd4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
