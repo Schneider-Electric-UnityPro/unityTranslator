@@ -273,7 +273,7 @@ namespace SchneiderElectric.UnityComments
         {
 
             var lang = "en";
-            int count = Comments == null ? 0 : Comments.Count();
+            int count = Comments == null ? 0 : Comments.Count;
 
             if (count > 0)
             {
@@ -448,19 +448,10 @@ namespace SchneiderElectric.UnityComments
         {
             bool writen = false;
             string file = TranslateTempPath;
-            if (File.Exists(file))
+            if (File.Exists(file) && PatchXef(TranslateTempPath))
             {
-                if (PatchXef(TranslateTempPath))
-                {
-                    //ZEF ready to use.
-                    if (File.Exists(file))
-                    {
-                        if (Zip(WorkingDirectory, ZEFTempPath))
-                        {
-                            writen = true;
-                        }
-                    }
-                }
+                //ZEF ready to use.
+                writen = Zip(WorkingDirectory, ZEFTempPath);
             }
             return writen;
         }
@@ -523,7 +514,7 @@ namespace SchneiderElectric.UnityComments
                     string fileContents = File.ReadAllText(file);
                     foreach (Comment c in Comments)
                     {
-                        if (fileContents.IndexOf(c.Key) >= 0)
+                        if (fileContents.IndexOf(c.Key,StringComparison.InvariantCulture) >= 0)
                         {
                             fileContents = fileContents.Replace(c.Key, c.Translation == null ? c.Source : c.Translation);
                         }
@@ -537,7 +528,7 @@ namespace SchneiderElectric.UnityComments
                 }
                 catch (Exception e)
                 {
-                    Log?.Error(e);
+                    Log?.Error(e.Message);
                 }
             }
             return writen;
@@ -699,9 +690,9 @@ namespace SchneiderElectric.UnityComments
                             return true;
                         }
                     }
-                    catch
+                    catch(Exception e)
                     {
-
+                        Log.Error(e.Message);
                     }
                 }
                 else
@@ -713,9 +704,9 @@ namespace SchneiderElectric.UnityComments
                         File.Copy(Source, zef);
                         return true;
                     }
-                    catch
+                    catch (Exception e)
                     {
-
+                        Log.Error(e.Message);
                     }
                 }
             }

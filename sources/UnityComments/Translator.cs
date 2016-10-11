@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.Serialization;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -92,6 +93,8 @@ namespace SchneiderElectric.UnityComments
 
         class CloudIdentifier
         {
+            private const string MicrosoftTranslatorAccountkey = "MicrosoftTranslatorAccountkey";
+            private const string MicrosoftTranslatorAccountPwd= "MicrosoftTranslatorAccountPwd";
             /// <summary>
             /// Gets or sets the key.
             /// </summary>
@@ -124,24 +127,24 @@ namespace SchneiderElectric.UnityComments
             /// <summary>
             /// Initializes a new instance of the <see cref="CloudIdentifier" /> class.
             /// </summary>
-            /// <param name="key">The key.</param>
-            /// <param name="pwd">The password.</param>
-            public   CloudIdentifier(string key, string pwd)
+            public   CloudIdentifier(int index)
             {
-                Key = key;
-                Password = pwd;
+
+                Key = System.Configuration.ConfigurationManager.AppSettings[$"{MicrosoftTranslatorAccountkey}{index}"];
+                Password = System.Configuration.ConfigurationManager.AppSettings[$"{MicrosoftTranslatorAccountPwd}{index}"];
             }
         }
 
         #region private
         private static int _index = 0;
+
         //manages till 4 differents accounts. to be set in unitycomments.dll.config
         private static List<CloudIdentifier> CloudIds = new List<CloudIdentifier>()
         {
-            new CloudIdentifier( Properties.Settings.Default.MicrosoftTranslatorAccountkey1,Properties.Settings.Default.MicrosoftTranslatorAccountPwd1),
-            new CloudIdentifier( Properties.Settings.Default.MicrosoftTranslatorAccountkey2,Properties.Settings.Default.MicrosoftTranslatorAccountPwd2),
-            new CloudIdentifier( Properties.Settings.Default.MicrosoftTranslatorAccountkey3,Properties.Settings.Default.MicrosoftTranslatorAccountPwd3),
-            new CloudIdentifier( Properties.Settings.Default.MicrosoftTranslatorAccountkey4,Properties.Settings.Default.MicrosoftTranslatorAccountPwd4)
+            new CloudIdentifier(1),
+            new CloudIdentifier(2),
+            new CloudIdentifier(3),
+            new CloudIdentifier(4)
         };
 
         /// <summary>
@@ -158,6 +161,7 @@ namespace SchneiderElectric.UnityComments
         /// <returns></returns>
         private static bool FindNextCredentials()
         {
+            int cur = _index;
             for (int i = 1; i < CloudIds.Count; i++)
             {
                 int rank = (_index + i) % CloudIds.Count;
@@ -232,7 +236,15 @@ namespace SchneiderElectric.UnityComments
         /// <returns></returns>
         public override  async Task<string> DetectSourceLanguage(string text)
         {
-            return await HttpGet<string>(BuildDetectUri(text));
+            try
+            {
+                return await HttpGet<string>(BuildDetectUri(text));
+            }
+            catch (WebException e)
+            {
+                Log?.Error(e.Message);
+                return string.Empty;
+            }
         }
 
         /// <summary>
@@ -250,12 +262,12 @@ namespace SchneiderElectric.UnityComments
                 if (LanguagesCodes.Contains(from) && LanguagesCodes.Contains(to))
                 {
                     List<string> parts = Split(text);
-                    string Responsebuilder = string.Empty;
+                    StringBuilder Responsebuilder = new StringBuilder();
                     foreach (string s in parts)
                     {
-                        Responsebuilder += await HttpGet<string>(BuildTranslateUri(text, from, to));
+                        Responsebuilder.Append( await HttpGet<string>(BuildTranslateUri(text, from, to)));
                     }
-                    translation = Responsebuilder;
+                    translation = Responsebuilder.ToString();
                     if (translation != null)
                     {
                         Log?.Debug($"Translation for source text '{text}' from {from} to {to} is {translation}");
@@ -263,7 +275,7 @@ namespace SchneiderElectric.UnityComments
                     else
                     {
                         Log?.Warn($"Translation for source text '{text}' from {from} to {to} does not return a valid string");
-                        translation = text;//back to original;
+                        translation = text;
                     }
                 }
                 else
@@ -303,29 +315,30 @@ namespace SchneiderElectric.UnityComments
         /// Sends the specified URL.
         /// </summary>
         /// <param name="url">The URL.</param>
-        /// <returns></returns>
-        private static async Task<T> HttpGet<T>(string url, int retry = 3)
+        /// <returns>T</returns>
+        /// <exception cref="WebException">no credentials</exception>
+        private static async Task<T> HttpGet<T>(string url)
         {
-            for (int i = 0; i < retry; i++)
+            var retry = CloudIds.Count;//max retry 
+            while (retry>0)
             {
                 try
                 {
+                    retry--;
                     Initialize();
                     HttpWebRequest request = CreateRequest(url);
                     return await GetResponse<T>(request);
                 }
                 catch(Exception e)
                 {
-                    if (retry == i + 1)
-                    {
-                        //last try
-                        Log?.Error(e.Message);
+                   if(! CheckCredentials(true))
+                   {
+                        throw new WebException("Invalid Credential for Microsoft Translator service", e);
                     }
-                    CheckCredentials(true);
-                    _credential = null; //forces the recalculation of the token
+                   _credential = null; //forces the recalculation of the token
                 }
             }
-            return default(T);
+            throw new WebException("No valid Credential for Microsoft Translator service foud");
         }
 
 
@@ -336,12 +349,14 @@ namespace SchneiderElectric.UnityComments
         /// <param name="uri">The URI.</param>
         /// <param name="param">The parameter.</param>
         /// <returns></returns>
-        private static async Task<T> HttpPost<T>(string uri, object param = null, int retry =3)
+        private static async Task<T> HttpPost<T>(string uri, object param = null)
         {
-            for (int i = 0; i < retry; i++)
+            var retry = CloudIds.Count;//max retry 
+            while (retry > 0)
             {
                 try
                 {
+                    retry--;
                     Initialize();
                     // create the request
                     HttpWebRequest request = CreateRequest(uri);
@@ -350,16 +365,14 @@ namespace SchneiderElectric.UnityComments
                 }
                 catch (Exception e)
                 {
-                    if (retry == i + 1)
+                    if (!CheckCredentials(true))
                     {
-                        //last try
-                        Log?.Error(e.Message);
+                        throw new WebException("Invalid Credential for Microsoft Translator service", e);
                     }
-                    CheckCredentials(true);
                     _credential = null; //forces the recalculation of the token
                 }
             }
-            return default(T);
+            throw new WebException("No valid Credential for Microsoft Translator service foud");
         }
 
         /// <summary>
@@ -370,8 +383,7 @@ namespace SchneiderElectric.UnityComments
         /// <returns></returns>
         private static async Task<T> GetResponse<T>(HttpWebRequest request)
         {
-            WebResponse response = null;
-            using (response = await request.GetResponseAsync())
+            using (WebResponse response = await request.GetResponseAsync())
             {
                 return InterpretResponse<T>(response);
             }
@@ -404,7 +416,7 @@ namespace SchneiderElectric.UnityComments
         {
             using (Stream stream = response.GetResponseStream())
             {
-                DataContractSerializer dcs = new DataContractSerializer(typeof(T));//(Type.GetType("System.String"));
+                DataContractSerializer dcs = new DataContractSerializer(typeof(T));
                 return (T)dcs.ReadObject(stream);
             }
         }
@@ -454,21 +466,27 @@ namespace SchneiderElectric.UnityComments
                 //Get Client Id and Client Secret from https://datamarket.azure.com/developer/applications/
                 //Refer obtaining AccessToken (http://msdn.microsoft.com/en-us/library/hh454950.aspx) 
 
-                CheckCredentials();
-                AdmAuthentication admAuth = new AdmAuthentication(CloudID.Key, CloudID.Password);
-                try
+                if (CheckCredentials())
                 {
-                    admToken = admAuth.GetAccessToken();
-                    // Create a header with the access_token property of the returned token
-                    _credential = "Bearer " + admToken.access_token;
+                    AdmAuthentication admAuth = new AdmAuthentication(CloudID.Key, CloudID.Password);
+                    try
+                    {
+                        admToken = admAuth.GetAccessToken();
+                        // Create a header with the access_token property of the returned token
+                        _credential = "Bearer " + admToken.access_token;
+                    }
+                    catch (WebException we)
+                    {
+                        Log?.Error(we);
+                    }
+                    catch (Exception e)
+                    {
+                        Log?.Error(e.Message);
+                    }
                 }
-                catch (WebException we)
+                else
                 {
-                    Log?.Error(we);
-                }
-                catch (Exception e)
-                {
-                    Log?.Error(e);
+                    Log.Error("no valid credential found");
                 }
 
             }
@@ -478,29 +496,43 @@ namespace SchneiderElectric.UnityComments
         /// Checks the credentials.
         /// </summary>
         /// <param name="forceIncr">if set to <c>true</c> [force incr].</param>
-        private static void CheckCredentials(bool forceIncr = false)
+        /// <returns> true if valid credential found</returns>
+        private static bool CheckCredentials(bool forceIncr = false)
         {
-            if (forceIncr)
+            if (CloudIds.Any(x => x.Valid))
             {
-                _index = (_index + 1) % CloudIds.Count;
-            }
-            if (!CloudID.Valid)
-            {
-                int start = _index;
+                if (forceIncr)
+                {
+                    _index = (_index + 1) % CloudIds.Count;
+                }
+
                 while (!CloudID.Valid)
                 {
                     if (!FindNextCredentials())
                     {
-                        Log?.Error($"No credential founds for Microsoft translator - please update unitycomments.dll.config with valid credentials");
-                        Log?.Info("Get Client Id and Client Secret from https://datamarket.azure.com/developer/applications");
-                        Log?.Info("Refer obtaining AccessToken (http://msdn.microsoft.com/en-us/library/hh454950.aspx)");
-                        Log?.Info("this tool support till 4 microsoft accounts");
-                        Log?.Info("put the client ID in unitycomments.dll.config/MicrosoftTranslatorAccountkey{1-4}/value");
-                        Log?.Info("put the secret in unitycomments.dll.config/MicrosoftTranslatorAccountPwd{1-4}/value");
+                        LogCredentialProblem();
+                        break;
                     }
-
                 }
             }
+            else
+            {
+                LogCredentialProblem();
+            }
+            return CloudID.Valid;
+        }
+
+        /// <summary>
+        /// Logs the credential problem.
+        /// </summary>
+        private static void LogCredentialProblem()
+        {
+            Log?.Error($"No credential founds for Microsoft translator - please update {AppDomain.CurrentDomain.SetupInformation.ConfigurationFile} with valid credentials");
+            Log?.Info("Get Client Id and Client Secret from https://datamarket.azure.com/developer/applications");
+            Log?.Info("Refer obtaining AccessToken (http://msdn.microsoft.com/en-us/library/hh454950.aspx)");
+            Log?.Info("this tool support till x=1..4 microsoft accounts");
+            Log?.Info($"put the client ID in {Path.GetFileName(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile)}/MicrosoftTranslatorAccountkey(x)/value");
+            Log?.Info($"put the secret in {Path.GetFileName(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile)}/MicrosoftTranslatorAccountPwd(x)/value");
         }
 
         /// <summary>
@@ -509,14 +541,21 @@ namespace SchneiderElectric.UnityComments
         /// <returns></returns>
         private static async Task Initlanguages()
         {
-            var code = await HttpGet<List<string>>(_baseUri + "/GetLanguagesForTranslate");
-            var names = await HttpPost<List<string>>(_baseUri + "/GetLanguageNames?locale=en", code);
-            _codeToLanguage = new Dictionary<string, string>();
-            _languageToCode = new Dictionary<string, string>();
-            for (int i = 0; i < code.Count; i++)
+            try
             {
-                _codeToLanguage.Add(code[i], names[i]);
-                _languageToCode.Add(names[i], code[i]);
+                _codeToLanguage = new Dictionary<string, string>();
+                _languageToCode = new Dictionary<string, string>();
+                var code = await HttpGet<List<string>>(_baseUri + "/GetLanguagesForTranslate");
+                var names = await HttpPost<List<string>>(_baseUri + "/GetLanguageNames?locale=en", code);
+                for (int i = 0; i < code.Count; i++)
+                {
+                    _codeToLanguage.Add(code[i], names[i]);
+                    _languageToCode.Add(names[i], code[i]);
+                }
+            }
+            catch(WebException e)
+            {
+                Log?.Error(e.Message);
             }
         }
 

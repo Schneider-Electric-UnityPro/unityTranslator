@@ -78,7 +78,7 @@ namespace SchneiderElectric.UnityTranslator
         /// <param name="outputfile">The xml output file.</param>
         private static void Extract(string sourcefile, string outputfile)
         {
-            UnityApplicationComments model = null;
+            UnityApplicationComments model ;
             if (CheckFile(sourcefile))
             {
                 model = new UnityApplicationComments(sourcefile);
@@ -149,13 +149,7 @@ namespace SchneiderElectric.UnityTranslator
         }
 
 
-      
-
-     
-
-     
-
-
+  
         #region utilities
 
         /// <summary>
@@ -201,13 +195,10 @@ namespace SchneiderElectric.UnityTranslator
                 help();
                 res = false;
             }
-            else if (mustExist)
+            else if (mustExist && !File.Exists(param))
             {
-                if (!File.Exists(param))
-                {
-                    _Log.Error($"File {param} not found");
-                    res = false;
-                }
+                _Log.Error($"File {param} not found");
+                res = false;
             }
             return res;
         }
@@ -272,16 +263,19 @@ namespace SchneiderElectric.UnityTranslator
         /// <returns></returns>
         private static bool CheckLang(string lang)
         {
-            bool exist= UnityApplicationComments.Translator.LanguagesCodes.Contains(lang);
+            var codes = UnityApplicationComments.Translator.LanguagesCodes;
+            bool exist = (codes != null && codes.Contains(lang)) ;
             if (!exist)
             {
                 _Log.Info($"{lang} : language code not found");
-                _Log.Debug("supported languages:");
-                foreach (var l in UnityApplicationComments.Translator.LanguagesCodes)
+                if (codes != null && codes.Count>0)
                 {
-                    _Log.Debug($"{l} : {UnityApplicationComments.Translator.LanguageNameFromCode(l) }");
+                    _Log.Debug("supported languages:");
+                    foreach (var l in codes)
+                    {
+                        _Log.Debug($"{l} : {UnityApplicationComments.Translator.LanguageNameFromCode(l) }");
+                    }
                 }
-
             }
             return exist;
         }
