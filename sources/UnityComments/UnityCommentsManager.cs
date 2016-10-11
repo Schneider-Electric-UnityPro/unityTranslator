@@ -305,14 +305,25 @@ namespace SchneiderElectric.UnityComments
                        select same;
             try
             {
+                const int interval = 100;
+                int CurrentCount = 0;
                 foreach (var group in list)
                 {
                     if (!string.IsNullOrEmpty(group.Key))
                     {
+                        CurrentCount++;
                         string translation = await Translator.Translate(group.Key, sourceLang, destlang);
                         foreach (var comment in group)
                         {
                             comment.Translation = translation;
+                            //put a minimum delay between request 
+                            //to avoid microsoft translator
+                            //to stop responding (DDOS defense) 
+                            if (CurrentCount % interval == 0)
+                            { 
+                                Log?.Info($"{CurrentCount} translations done");
+                                await Task.Delay(1500);
+                            }
                         }
                     }
                 }
