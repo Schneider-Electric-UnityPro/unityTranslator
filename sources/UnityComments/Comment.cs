@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Copyright (c) 2016 Schneider-Electric
+using System;
 using System.Xml.Serialization;
 
 namespace SchneiderElectric.UnityComments

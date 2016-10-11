@@ -1,4 +1,5 @@
-﻿using log4net.Config;
+﻿// Copyright (c) 2016 Schneider-Electric
+using log4net.Config;
 using log4net;
 using System;
 

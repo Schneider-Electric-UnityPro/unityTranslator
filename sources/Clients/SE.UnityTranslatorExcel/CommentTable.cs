@@ -1,4 +1,5 @@
-﻿
+﻿// Copyright (c) 2016 Schneider-Electric
+
 using System;
 using System.Data;
 using System.Linq;

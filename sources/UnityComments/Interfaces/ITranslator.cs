@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿// Copyright (c) 2016 Schneider-Electric
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SchneiderElectric.UnityComments

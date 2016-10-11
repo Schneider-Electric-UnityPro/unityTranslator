@@ -1,4 +1,5 @@
-﻿using SchneiderElectric.UnityWrapper;
+﻿// Copyright (c) 2016 Schneider-Electric
+using SchneiderElectric.UnityWrapper;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Copyright (c) 2016 Schneider-Electric
+using System;
 using System.Collections.Generic;
 using Microsoft.Office.Tools.Ribbon;
 using Microsoft.Office.Interop.Excel;
