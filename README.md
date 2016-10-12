@@ -13,6 +13,6 @@ This project can be downloaded as a command line tool (console application windo
 
 
 ## documentation
-For more documentation and guides please refer to https://github.com/Schneider-Electric-UnityPro/unityTranslator/blob/master/Unity%20Translator%20tools.pdf
+For more documentation and guides please refer to https://github.com/Schneider-Electric-UnityPro/unityTranslator/raw/master/Unity%20Translator%20tools.pdf
 
 
