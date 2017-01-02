@@ -9,7 +9,9 @@ In automatic mode it uses the Microsoft Translator® tool. For test and understa
 the project provides default limited Microsoft Translator® account.
 
 ## downloads
-This project can be downloaded as a command line tool (console application windows): https://github.com/Schneider-Electric-UnityPro/unityTranslator/releases/download/v1.2/Schneider-Electric.Translator.Command.zip or as a plugin for Microsoft excel: https://github.com/Schneider-Electric-UnityPro/unityTranslator/releases/download/v1.2/Schneider-Electric.Translator.Excel.addin.zip .
+This project can be downloaded as a command line tool (console application windows)or as a plugin for Microsoft excel.
+please refer to the latest release at:
+https://github.com/Schneider-Electric-UnityPro/unityTranslator/releases
 
 
 ## documentation
