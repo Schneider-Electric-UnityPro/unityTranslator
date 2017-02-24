@@ -7,11 +7,15 @@ It works in manual mode or in automatic mode.
 
 In automatic mode it uses the Microsoft Translator® tool. For test and understanding purposes 
 the project provides default limited Microsoft Translator® account.
+##warning
+the migration to Azure platform recently announced will require some changes:
+https://github.com/Schneider-Electric-UnityPro/unityTranslator/blob/master/microsoft-translator-migration.html
 
 ## downloads
 This project can be downloaded as a command line tool (console application windows)or as a plugin for Microsoft excel.
 please refer to the latest release at:
 https://github.com/Schneider-Electric-UnityPro/unityTranslator/releases
+
 
 
 ## documentation
