@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Xunit;
 
 
-namespace UnitTestScanner
+namespace UnitTest
 {
     /// <summary>
     /// 
@@ -108,7 +108,7 @@ namespace UnitTestScanner
             Assert.True(File.Exists(tstfile));
             using (UnityApplicationComments CommentManager = UnityApplicationComments.LoadXml(tstfile) as UnityApplicationComments)
             {
-                int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count();
+                int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count;
                 Assert.True(count > 0);
                 await CommentManager.TranslateComments("ar");
                 foreach (var c in CommentManager.Comments)
@@ -183,15 +183,18 @@ namespace UnitTestScanner
         {
             bool res = CommentManager2.Comments.Count == CommentManager.Comments.Count;
             Assert.True(res);
-            int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count();
+            int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count;
 
             for (int c = 0; c < count; c++)
             {
                 var comment1 = CommentManager.Comments[c];
                 var comment2 = CommentManager2.Comments[c];
-                Assert.True(res&= comment1.Context == comment2.Context, $"[{comment2.Context}] <> [{comment1.Context}]");
-                Assert.True(res &=comment2.Source == comment1.Source, $"[{comment2.Source}] <> [{comment1.Source}]");
-                Assert.True(res&=comment1.Translation == comment2.Translation, $"[{comment2.Translation}] <> [{comment1.Translation}]");
+                res &= comment1.Context == comment2.Context;
+                Assert.True(res, $"[{comment2.Context}] <> [{comment1.Context}]");
+                res &=comment2.Source == comment1.Source;
+                Assert.True(res, $"[{comment2.Source}] <> [{comment1.Source}]");
+                res &=comment1.Translation == comment2.Translation;
+                Assert.True(res, $"[{comment2.Translation}] <> [{comment1.Translation}]");
             }
             return res;
         }
@@ -224,7 +227,7 @@ namespace UnitTestScanner
             using (UnityApplicationComments CommentManager = new UnityApplicationComments())
             {
                 Assert.True(CommentManager.ReadSource(source));
-                int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count();
+                int count = CommentManager.Comments == null ? 0 : CommentManager.Comments.Count;
                 CommentManager.SaveXml(dest + ".source.xml");
                 Assert.True(count > 0);
                 var detected = CommentManager.DetectLanguage();
