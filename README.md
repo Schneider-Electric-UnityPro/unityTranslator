@@ -7,7 +7,8 @@ It works in manual mode or in automatic mode.
 
 In automatic mode it uses the Microsoft Translator® tool. For test and understanding purposes 
 the project provides default limited Microsoft Translator® account.
-##warning
+
+## warning
 the migration to Azure platform recently announced will require some changes:
 https://github.com/Schneider-Electric-UnityPro/unityTranslator/blob/master/Migrate%20Microsoft%20Translator%20API%20to%20Azure%E2%80%94limited%20subscription%20access%20in%20Azure%20DataMarket%20through%20April%2030%2C%202017.html
 
