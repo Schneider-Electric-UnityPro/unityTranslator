@@ -1,7 +1,7 @@
 # unityTranslator
 Allows to translate UnityPro applications
 
-This project helps to understand how to use the Schneider-Electric® UnityPro®
+This project helps to understand how to use the UnityPro
 automation interface to translate the content of user application. 
 It works in manual mode or in automatic mode.
 
