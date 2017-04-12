@@ -9,7 +9,7 @@ In automatic mode it uses the Microsoft Translator® tool. For test and understa
 the project provides default limited Microsoft Translator® account.
 ##warning
 the migration to Azure platform recently announced will require some changes:
-https://click.email.microsoftemail.com/?qs=7433180c131ed004e4dcb62870749c903a191b053a84a86b0f811383f2e5c904b86ced8ea3b673d233a102729804aafee9ccac56f100fd93fc40531edc174c10
+https://github.com/Schneider-Electric-UnityPro/unityTranslator/blob/master/Migrate%20Microsoft%20Translator%20API%20to%20Azure%E2%80%94limited%20subscription%20access%20in%20Azure%20DataMarket%20through%20April%2030%2C%202017.html
 
 ## downloads
 This project can be downloaded as a command line tool (console application windows)or as a plugin for Microsoft excel.
